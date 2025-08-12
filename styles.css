@@ -46,7 +46,7 @@ header .max-w-7xl {
 }
 
 header .py-3 {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     padding-bottom: 0.75rem;
 }
 
@@ -154,8 +154,9 @@ header .py-3 {
     padding: 2rem;
     min-height: calc(100vh - 80px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -228,7 +229,7 @@ header .py-3 {
 @media (max-width: 768px) {
     .container {
         padding: 1rem;
-        padding-top: 0.5rem;
+        padding-top: 0.25rem;
     }
     
     .apps-grid {
