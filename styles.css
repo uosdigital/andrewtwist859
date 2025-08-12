@@ -226,10 +226,12 @@ header .py-3 {
     .apps-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+        max-width: 100%;
     }
     
     .app-item {
         padding: 0.75rem;
+        min-height: 140px;
     }
     
     .app-icon {
@@ -245,21 +247,29 @@ header .py-3 {
 
 @media (max-width: 480px) {
     .apps-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.75rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 300px;
     }
     
     .app-item {
-        padding: 0.5rem;
+        padding: 1rem;
+        min-height: 120px;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
     }
     
     .app-icon {
-        width: 45px;
-        height: 45px;
-        font-size: 1.1rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin-bottom: 0;
+        margin-right: 1rem;
     }
     
     .app-name {
-        font-size: 0.8rem;
+        font-size: 1rem;
+        margin-top: 0;
     }
 }
